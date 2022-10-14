@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
+$maincolor: rgb(46, 21, 52)
+$secondarycolor: rgb(95, 64, 103)
+$lightcolor: rgb(237, 229, 239)
+$grey: rgb(79, 79, 79)
+
+*
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+    padding: 0
+
+header
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $maincolor
+
+.brand
+    cursor: pointer
+    height: 50px
+    width: 50px
+    padding-left: 5px
+
+ul
+    margin: 10px
+    list-style-type: none
+    overflow: hidden
+    background-color: $maincolor
+
+li
+    float: left
+
+li a
+    display: block
+    color: $lightcolor
+    text-align: center
+    text-decoration: none
+    padding: 15px
+    border-radius: 10px
+
+li a:hover
+    background-color: $secondarycolor
+
+.title
+    font-size: 35px
+    vertical-align: middle
+
+.welcomemessage
+    padding-top: 15px 
+    font-size: 22px
+    display: inline-block
+
+body
+    background-color: $lightcolor
+    color: $lightcolor
+
+footer
+    position: fixed
+    bottom: 0%
+    width: 100%
+    text-align: center
+    padding: 25px
+    background-color: $maincolor
+    color: $lightcolor
