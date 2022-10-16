@@ -5,6 +5,7 @@ $lightcolor: rgb(237, 229, 239)
 $grey: rgb(79, 79, 79)
 
 *
+    box-sizing: border-box
     font-family: 'Montserrat', sans-serif
     margin: 0
     padding: 0
@@ -22,7 +23,6 @@ header
     padding-right: 5px
 
 ul
-    margin: 10px
     list-style-type: none
     overflow: hidden
     background-color: $maincolor
@@ -36,10 +36,15 @@ li a
     text-align: center
     text-decoration: none
     padding: 15px
-    border-radius: 10px
+    transition: 0.15s ease
 
 li a:hover
-    background-color: $secondarycolor
+    border-right: 1.5px solid $lightcolor
+
+
+li a:active
+    border-left: 1.5px solid $lightcolor
+
 
 .title
     font-size: 35px
@@ -50,11 +55,6 @@ body
     background-color: $lightcolor
     color: $secondarycolor
 
-body h1
-    text-align: center
-    font-weight: 100
-    padding: 25px
-
 .container1
     padding-top: 100px
 
@@ -64,28 +64,9 @@ body h1
     text-align: center
     font-size: 20px
 
-.button
-    display: flex
-    justify-content: center
-    align-items: center
-    padding: 25px
-
-.button a
-    background-color: $secondarycolor
-    color: $lightcolor
-    text-align: center
-    text-decoration: none
-    padding: 15px
-    border-radius: 10px
-    border: none
-
-.button a:hover
-    background-color: $maincolor
-
 footer
-    position: fixed
-    left: 0
-    bottom: 0
+    position: relative
+    min-height: 100%
     width: 100%
     background-color: $maincolor
     color: white
