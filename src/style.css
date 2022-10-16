@@ -51,10 +51,6 @@ li a:hover {
   border-right: 1.5px solid #ede5ef;
 }
 
-li a:active {
-  border-left: 1.5px solid #ede5ef;
-}
-
 .title {
   font-size: 35px;
   vertical-align: middle;
